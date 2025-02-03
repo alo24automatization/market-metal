@@ -1,0 +1,6 @@
+{
+  "PORT": 80,
+  "mongoUri": "mongodb://10.6.0.2:27017/market",
+  "jwtSecret": "market",
+  "baseUrl": "https://stroy-system.uz"
+}

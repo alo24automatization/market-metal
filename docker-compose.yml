@@ -1,0 +1,19 @@
+services:
+  market-app:
+    container_name: market-app
+    image: alodokker/market-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    volumes:
+#      - "/etc/localtime:/etc/localtime:ro"
+#      - "/etc/timezone:/etc/timezone:ro"
+#    labels:
+#      - dev.dozzle.group=ALO-24
+#      - dev.dozzle.name=APP
+#    ports:
+#      - "8080:8080"
+#    restart: always
+#    networks:
+#      alo-24-network:
+#        ipv4_address: 10.5.0.3

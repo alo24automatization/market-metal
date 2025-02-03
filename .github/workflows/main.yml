@@ -1,0 +1,23 @@
+
+name: Publish
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  BuildAndPublish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: docker login
+        uses: docker/login-action@v3.3.0
+        with:
+          registry: ${{secrets.REGISTRY}}
+          username: ${{secrets.REGISTRY_USERNAME}}
+          password: ${{secrets.REGISTRY_PASSWORD}}
+      - name: build
+        run: docker compose build
+      - name: publish
+        run: docker compose push

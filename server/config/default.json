@@ -1,0 +1,7 @@
+{
+  "PORT": 8801,
+  "mongoUriONLINE": "-",
+  "mongoUri": "mongodb://localhost:27017/alo24",
+  "jwtSecret": "market",
+  "baseUrl": "http://localhost:8801"
+}
