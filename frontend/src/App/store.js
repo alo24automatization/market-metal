@@ -1,4 +1,4 @@
-import {configureStore} from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import LoginReducer from '../Pages/Login/loginSlice'
 import CurrencyReducer from '../Pages/Currency/currencySlice'
 import ProductsReducer from '../Pages/Products/Create/productSlice'

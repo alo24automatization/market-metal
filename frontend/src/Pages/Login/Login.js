@@ -57,7 +57,7 @@ function Login() {
         <div className="login-right mt-[-50px] flex items-center justify-center w-full lg:w-1/2 bg-white">
           <div className="login-form-container w-full max-w-md p-4">
             <div className="logo-container  mb-8 text-center">
-              <img src={Logo} className="w-24 mx-auto" alt="Logo" />
+              <img src={Logo} className="mx-auto" alt="Logo" />
             </div>
             <form className="login-form space-y-6" onSubmit={handleClickSubmit}>
               <div>
@@ -87,7 +87,7 @@ function Login() {
                 {loading ? <span className="animate-spin spinner mr-2"></span> : t('Kirish')}
               </button>
             </form>
-            
+
           </div>
         </div>
       </div>
